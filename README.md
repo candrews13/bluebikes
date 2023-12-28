@@ -1,4 +1,4 @@
-# Bostom Bluebikes Customer Conversion Analysis Project
+# Boston Bluebikes Customer Conversion Analysis Project
 Bluebikes data analysis project for customer conversion
 
 This project utilized a combination of SQL and Tableau to analyze and visualize trip data from 2018 and 2019.
