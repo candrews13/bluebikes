@@ -4,7 +4,7 @@ Bluebikes data analysis project for customer conversion
 This project utilized a combination of SQL and Tableau to analyze and visualize trip data from 2018 and 2019.
 The PostgreSQL code is provided here in this github repository.
 
-Background:
+Background on Bluebikes:
 
 Bluebikes is a public bike share program in Metro Boston, MA which launched in 2011. The system’s most recent expansion was into Everett in 2019.
 Subscribers can pay for monthly or annual memberships with unlimited 45-minute trips. 
@@ -34,11 +34,11 @@ Data Dictionary
 Stations table
 | **Column Name** | **Data Type** | **Description**                                                   |
 |-----------------|---------------|-------------------------------------------------------------------|
-| Number          | varchar       |     Station identifying alphanumeric code                         |
+| Number          | varchar       | Station identifying alphanumeric code                             |
 | Name            | varchar       | Name of the station                                               |
 | Latitude        | numeric       | Station location information                                      |
 | Longitude       | numeric       | Station location information                                      |
-| District        | text          |     Municipality: Boston, Cambridge, Everett, Somerville, etc.    |
+| District        | text          | Municipality: Boston, Cambridge, Everett, Somerville, etc.        |
 | Public          | text          | yes = 339, no other entries                                       |
 | Total_docks     | integer       | Number of bike docks at the station                               |
 | Id              | integer       | Station id number                                                 |
@@ -46,9 +46,9 @@ Stations table
 Trip Tables (one per year)
 | **Column Name**  | **Data Type** | **Description**                                                                        |
 |------------------|---------------|----------------------------------------------------------------------------------------|
-| Bike id          | integer       |     Station identifying alphanumeric code                                              |
-| Start time       | timestamp     | Logged start time of a rider’s trip                                                    |
-| End time         | timestamp     | Logged end time of a rider’s trip                                                      |
+| Bike_id          | integer       | Station identifying alphanumeric code                                                  |
+| Start_time       | timestamp     | Logged start time of a rider’s trip                                                    |
+| End_time         | timestamp     | Logged end time of a rider’s trip                                                      |
 | Start_station_id | integer       | ID of the station the trip started at                                                  |
 | End_station_id   | integer       | ID of the station the trip ended at                                                    |
 | User_type        | text          | Customer = Single Trip or Adventure (day) Pass;  Subscriber = Annual or Monthly Member |
